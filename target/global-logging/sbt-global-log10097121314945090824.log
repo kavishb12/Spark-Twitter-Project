@@ -1,0 +1,19 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, Some(f049ea32-c93b-4c8e-b47e-0a60d7cb7ea3), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to C:\Users\Kavish Bhathija\IdeaProjects\Twitter Spark\target\scala-2.12\classes ...[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Kavish Bhathija\IdeaProjects\Twitter Spark\src\main\scala\twitterdao\TwitterDAO.scala:37:24: overloaded method constructor PrintWriter with alternatives:[0m
+[0m[[0m[31merror[0m] [0m[0m  (x$1: java.io.File,x$2: java.nio.charset.Charset)java.io.PrintWriter <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (x$1: java.io.File,x$2: String)java.io.PrintWriter <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (x$1: String,x$2: java.nio.charset.Charset)java.io.PrintWriter <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (x$1: String,x$2: String)java.io.PrintWriter <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (x$1: java.io.OutputStream,x$2: Boolean)java.io.PrintWriter <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (x$1: java.io.Writer,x$2: Boolean)java.io.PrintWriter[0m
+[0m[[0m[31merror[0m] [0m[0m cannot be applied to (String, Boolean)[0m
+[0m[[0m[31merror[0m] [0m[0m      val fileWriter = new PrintWriter(path,true)[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 1 s, completed 03-Mar-2022, 6:24:17 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0minfo[0m] [0m[0mshutting down sbt server[0m

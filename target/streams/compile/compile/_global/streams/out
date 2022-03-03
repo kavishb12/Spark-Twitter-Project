@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Kavish Bhathija\IdeaProjects\Twitter Spark\src\main\scala\Main.scala:29:5: illegal start of simple pattern[0m
+[0m[[0m[31merror[0m] [0m[0mfor(var i <- 1 to 5){[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Kavish Bhathija\IdeaProjects\Twitter Spark\src\main\scala\Main.scala:54:1: '<-' expected but '}' found.[0m
+[0m[[0m[31merror[0m] [0m[0m}[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
