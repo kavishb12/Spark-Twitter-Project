@@ -23,6 +23,15 @@ import scala.collection.mutable.ArrayBuffer
 
 class TwitterDAO(bearerToken: String) {
 
+  /**
+   * This method scrapes the twitter data from the official API
+   * and limits the result to a 1000 lines because otherwise the API
+   * returns exceeded limit in json. 
+   * 
+   * @param path: PATH to save the JSON
+   * @param count: Limit to number of rows
+   * @return        Writes Data to a file
+   */
 
   def collectStreamedTweets(path:String, count:Int=1000): Unit = {
     val httpClient = HttpClients.custom.setDefaultRequestConfig(RequestConfig.custom.setCookieSpec(CookieSpecs.STANDARD).build).build
@@ -46,6 +55,10 @@ class TwitterDAO(bearerToken: String) {
       fileWriter.close()
     }
   }
+
+  /**
+   * Internal Method which can convert the tweets to a default type for easy structure. 
+   */
 
   private def JSONTweetResponseToTweetObject(response: String): List[Tweet] = {
 

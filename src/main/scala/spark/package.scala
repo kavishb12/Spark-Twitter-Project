@@ -642,19 +642,4 @@ package object spark {
       true
   }
 
-  val twitterNormalization: List[Double] = List(
-    0.662809, 0.662809, 0.694371, 0.789058,
-    0.883745, 1.009995, 1.136244, 1.268806,
-    1.268806, 1.136244, 1.073119, 1.009995,
-    1.009995, 1.073119, 1.104682, 1.136244,
-    1.120463, 1.104682, 1.120463, 1.136244,
-    1.073119, 0.978432, 0.852183, 0.694371
-  )
-
-  def trafficNormalization(): Double = {
-    val now = Calendar.getInstance()
-    val currentHour = now.get(Calendar.HOUR_OF_DAY)
-
-    twitterNormalization(currentHour)
-  }
 }
